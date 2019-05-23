@@ -9,7 +9,7 @@ class PostList extends Component {
     render() {
         return (
             <div>
-               Post List 
+                <h1>POST LIST</h1>
             </div>
         )
     }
