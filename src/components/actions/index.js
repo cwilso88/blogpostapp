@@ -1,4 +1,4 @@
-import jsonPlaceholder from '../apis/jsonPaceholder';
+//import jsonPlaceholder from '../apis/jsonPaceholder';
 
 export const fetchPosts = () => {
     return {
