@@ -1,12 +1,11 @@
 import React from 'react';
 
-const postReducer = () => {
-    return (
-        <div>
-            post: Reducer
-        </div>
-    )
-}
+const postReducer = (state = [], action) => {
+    if(action.type === 'FETCH_POSTS') {
+        return action.payload;
+    }
+    return state;
+};
 
 export default postReducer;
 
