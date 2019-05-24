@@ -6,6 +6,14 @@ class PostList extends Component {
     componentDidMount() {
         this.props.fetchPosts();
     }
+
+    renderList() {
+        return this.props.posts.map(post => {
+            return (
+                
+            )
+        });
+    }
     render() {
         return (
             <div>
@@ -15,7 +23,11 @@ class PostList extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return { posts: state.posts };
+};
+
 export default connect(
-    null,
+    mapStateToProps,
     { fetchPosts }
 )(PostList);
