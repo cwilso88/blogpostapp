@@ -3,5 +3,5 @@ import postsReducer from './postsReducer';
 
 
 export default combineReducers({
-    dummyReducers: postsReducer
+  posts: postsReducer
 });
