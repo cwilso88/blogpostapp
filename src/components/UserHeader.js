@@ -7,7 +7,11 @@ class UserHeader extends Component {
         this.props.fetchUser(this.props.userId);
     }
     render() {
-        const user = this.props.users.find((user) => );
+        const user = this.props.users.find((user) => user.id === this.props.userId);
+
+        if (!user) {
+            return null;
+        }
         return (
             <div>
                 User Header
